@@ -1,0 +1,41 @@
+name: AtlasLojas
+version: 1.0
+main: org.mineTest.AtlasLojas
+api-version: 1.19
+
+commands:
+  loja:
+    description: Comando principal do AtlasLojas
+    usage: /loja [jogador]
+    permission: atlaslojas.use
+  kit:
+    description: Recebe um kit completo de itens encantados
+    usage: /kit
+    permission: minetest.kit
+  hello:
+    description: Um comando de teste
+    usage: /hello
+  rank:
+    description: Define o cargo de um jogador
+    usage: /rank <jogador> <cargo>
+    permission: minetest.rank.admin
+
+permissions:
+  atlaslojas.use:
+    description: Permissão para usar o comando /loja
+    default: true
+  atlaslojas.vip:
+    description: Permissão para recursos VIP
+    default: false
+  minetest.rank.master:
+    description: Permissão para o cargo MASTER
+    default: op
+  minetest.rank.dono:
+    description: Permissão para o cargo DONO
+    default: op
+  minetest.rank.admin:
+    description: Permissão para o cargo ADMIN
+    default: op
+  minetest.rank.jogador:
+    description: Permissão para o cargo JOGADOR
+    default: true
